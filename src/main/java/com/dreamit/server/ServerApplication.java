@@ -6,13 +6,16 @@ import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 
 /**
  * spring cloud eureka server注册服务端
- * lvxd
+ * @Author lvxd
  */
 @EnableEurekaServer
 @SpringBootApplication
 public class ServerApplication {
 
     public static void main(String[] args) {
+
+        System.out.println("启用注册服务组件");
+
         SpringApplication.run(ServerApplication.class, args);
     }
 
